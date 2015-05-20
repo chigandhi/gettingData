@@ -63,5 +63,5 @@ tidyColNames <- gsub("\\.$", "", tidyColNames)
 colnames(tidyData) <- tidyColNames
 
 ## write output file
-write.csv(tidyData, file="tidydata.csv", row.names=F)
+write.table(tidyData, file="tidydata.txt", row.names=F)
 
